@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="customAttrs">
+        <attr name="actionSettings" format="reference" />
+        <attr name="actionLogo" format="reference" />
+        <attr name="actionBack" format="reference"/>
+        <attr name="actionIcon" format="reference"/>
+    </declare-styleable>
+
+</resources>

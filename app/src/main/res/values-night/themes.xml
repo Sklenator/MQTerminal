@@ -1,0 +1,12 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MQTT_Project" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <item name="colorPrimary">@color/my_primary</item>
+        <item name="actionSettings">@drawable/settings_light</item>
+        <item name="actionLogo">@drawable/spsoa_logo_white</item>
+        <item name="actionBack">@drawable/back_arrow_light</item>
+        <item name="actionIcon">@drawable/icon_dark</item>
+    </style>
+
+</resources>

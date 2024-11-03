@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".KitchenFragment">
+
+    <TextView
+        android:id="@+id/txtV_kitchen_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/kitchen_options"
+        android:textAlignment="center"
+        android:textSize="80sp" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@android:color/black" />
+
+    <LinearLayout
+        android:id="@+id/kitchen_box_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtV_kitchen_lights_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/light_status"
+            android:textSize="64sp" />
+
+        <TextView
+            android:id="@+id/txtV_kitchen_lights_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/offline_status"
+            android:textColor="#FF0000"
+            android:textSize="64sp" />
+
+        <Button
+            android:id="@+id/btn_kitchen_lights"
+            android:layout_width="385dp"
+            android:layout_height="104dp"
+            android:layout_gravity="center"
+            android:text="@string/turn_on_lights"
+            android:textSize="44sp" />
+
+        <TextView
+            android:id="@+id/kitchen_lights_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/status_off"
+            android:textColor="#FF0000"
+            android:textSize="64sp" />
+
+        <View
+            android:id="@+id/divider1"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/black" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtV_kitchen_temperature_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/temperature"
+            android:textSize="64sp" />
+
+        <TextView
+            android:id="@+id/txtV_kitchen_temperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="0.0 °C"
+            android:textSize="64sp" />
+
+        <TextView
+            android:id="@+id/txtV_kitchen_temperature_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/offline_status"
+            android:textColor="#FF0000"
+            android:textSize="64sp" />
+
+        <Button
+            android:id="@+id/btn_kitchen_show_temperature"
+            android:layout_width="470dp"
+            android:layout_height="116dp"
+            android:layout_gravity="center"
+            android:text="@string/show_temperature"
+            android:textSize="44sp" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/btn_kitchen_back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="#000000"
+            android:text="@string/back"
+            android:textSize="60sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="VisualLintButtonSize" />
+    </LinearLayout>
+
+</LinearLayout>

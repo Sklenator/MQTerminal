@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".BathroomFragment">
+
+    <TextView
+        android:id="@+id/txtV_bathroom_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/bathroom_options"
+        android:textAlignment="center"
+        android:textSize="34sp" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@android:color/black" />
+
+    <LinearLayout
+        android:id="@+id/bathroom_box_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtV_bathroom_lights_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/light_status"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/txtV_bathroom_lights_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/offline_status"
+            android:textColor="#FF0000"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btn_bathroom_lights"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/turn_on_lights" />
+
+        <TextView
+            android:id="@+id/bathroom_lights_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/status_off"
+            android:textColor="#FF0000"
+            android:textSize="24sp" />
+
+        <View
+            android:id="@+id/divider1"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/black" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtV_bathroom_temperature_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/temperature"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/txtV_bathroom_temperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="0.0 °C"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/txtV_bathroom_temperature_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/offline_status"
+            android:textColor="#FF0000"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btn_bathroom_show_temperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/show_temperature" />
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <Button
+            android:id="@+id/btn_bathroom_back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:text="@string/back"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="VisualLintButtonSize"
+            android:layout_gravity="bottom"/>
+    </LinearLayout>
+
+</LinearLayout>

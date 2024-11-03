@@ -1,0 +1,83 @@
+<resources>
+    <!-- Preference Titles -->
+    <string name="messages_header" translatable="false">Messages</string>
+    <string name="sync_header" translatable="false">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title" translatable="false">Your signature</string>
+    <string name="reply_title" translatable="false">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title" translatable="false">Sync email periodically</string>
+    <string name="attachment_title" translatable="false">Download incoming attachments</string>
+    <string name="attachment_summary_on" translatable="false">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off" translatable="false">Only download attachments when manually requested</string>
+
+
+    <string name="app_name" translatable="false">MQTerminal</string>
+    <string name="press_conn">Press Connect to connect to the MQTT Broker</string>
+    <string name="press_disconn">Press Disconnect to disconnect from </string>
+    <string name="conn">Connect</string>
+    <string name="disconn">Disconnect</string>
+    <string name="mqtt_main_menu">MQTT Main Menu</string>
+    <string name="house">House</string>
+    <string name="garden">Garden</string>
+    <string name="basement">Basement</string>
+    <string name="garage">Garage</string>
+    <string name="house_rooms">House Rooms:</string>
+    <string name="main_hallway">Main Hallway</string>
+    <string name="master_bedroom">Master Bedroom</string>
+    <string name="kitchen">Kitchen</string>
+    <string name="living_room">Living Room</string>
+    <string name="dining_room">Dining Room</string>
+    <string name="bathroom">Bathroom</string>
+    <string name="add_room">Add Room…</string>
+    <string name="back"><![CDATA[< Back]]></string>
+    <string name="dark_mode">Dark mode</string>
+    <string name="current_version_title">Current Version:</string>
+    <string name="app_version" translatable="false">Release 1.0</string>
+    <string name="about">About</string>
+    <string name="light_status">Light status:</string>
+    <string name="offline_status" translatable="false">Offline</string>
+    <string name="turn_on_lights">Turn On Lights</string>
+    <string name="bbq_status">BBQ status:</string>
+    <string name="turn_on_bbq">Turn On BBQ</string>
+    <string name="sprinklers_status">Sprinklers status:</string>
+    <string name="turn_on_sprinklers">Turn On Sprinklers</string>
+    <string name="basement_options">Basement Options:</string>
+    <string name="status_off">Off</string>
+    <string name="as_part_of_a_final_high_school_project">As a final high school project</string>
+    <string name="mqtt_console_terminal" translatable="false">MQTT Console Terminal</string>
+    <string name="created_by_tom_rusnok">Created by Tomáš Rusnok</string>
+    <string name="czech">Czech</string>
+    <string name="language">Language</string>
+    <string name="change_language_to">Change language to:</string>
+    <string name="language_dialog_message">You can currently choose from only two languages</string>
+    <string name="english">English</string>
+    <string name="connection">Connection</string>
+    <string name="connect_to_mqtt_broker">Connect to the MQTT Broker?</string>
+    <string name="cancel">Cancel</string>
+    <string name="bathroom_options">Bathroom Options:</string>
+    <string name="dining_room_options">Dining Room Options:</string>
+    <string name="living_room_options">Living Room Options:</string>
+    <string name="main_hallway_options">Main Hallway Options:</string>
+    <string name="master_bedroom_options">Master Bedroom Options:</string>
+    <string name="kitchen_options">Kitchen Options:</string>
+    <string name="turn_off_sprinklers">Turn Off Sprinklers</string>
+    <string name="online" translatable="false">Online</string>
+    <string name="turn_off_lights">Turn Off Lights</string>
+    <string name="status_on">On</string>
+    <string name="garage_options">Garage Options:</string>
+    <string name="garden_options">Garden Options:</string>
+    <string name="distance">Distance:</string>
+    <string name="temperature">Temperature:</string>
+    <string name="garage_doors">Garage Doors:</string>
+    <string name="open_doors">Open Doors</string>
+    <string name="close_doors">Close Doors</string>
+    <string name="preference_file_key" translatable="false">com.rusnok4d.mqtt_project.PREFERENCE_FILE_KEY</string>
+    <string name="start_tracking_distance">Start Tracking Distance</string>
+    <string name="stop_tracking_distance">Stop Tracking Distance</string>
+    <string name="show_distance">Show Distance</string>
+    <string name="show_temperature">Show Temperature</string>
+</resources>

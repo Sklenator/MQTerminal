@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".GardenFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/garden_box_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtV_garden_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/garden_options"
+                android:textAlignment="center"
+                android:textSize="34sp" />
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="@android:color/black" />
+
+            <TextView
+                android:id="@+id/txtV_garden_lights_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/light_status"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/txtV_garden_lights_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/offline_status"
+                android:textColor="#FF0000"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btn_garden_lights"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/turn_on_lights" />
+
+            <TextView
+                android:id="@+id/garden_lights_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/status_off"
+                android:textColor="#FF0000"
+                android:textSize="24sp" />
+
+            <View
+                android:id="@+id/divider1"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/black" />
+
+            <TextView
+                android:id="@+id/txtV_garden_doors_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/bbq_status"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/txtV_garden_BBQ_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/offline_status"
+                android:textColor="#FF0000"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btn_garden_BBQ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/turn_on_bbq" />
+
+            <TextView
+                android:id="@+id/garden_bbq_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/status_off"
+                android:textColor="#FF0000"
+                android:textSize="24sp" />
+
+            <View
+                android:id="@+id/divider2"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/black" />
+
+            <TextView
+                android:id="@+id/txtV_garden_sprinklers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/sprinklers_status"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/txtV_garden_sprinklers_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/offline_status"
+                android:textColor="#FF0000"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btn_garden_sprinklers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/turn_on_sprinklers" />
+
+            <TextView
+                android:id="@+id/garden_sprinklers_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/status_off"
+                android:textColor="#FF0000"
+                android:textSize="24sp" />
+
+            <View
+                android:id="@+id/divider3"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/black" />
+
+            <Button
+                android:id="@+id/btn_garden_back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="#000000"
+                android:text="@string/back"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="VisualLintButtonSize" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

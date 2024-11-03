@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:id="@+id/img_settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:src="?attr/actionSettings"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.957"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtV_main_menu_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="@string/mqtt_main_menu"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_m_m_house"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/button_background"
+        android:text="@string/house"
+        android:textSize="20sp"
+        app:icon="@drawable/house"
+        app:iconSize="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_m_m_garden"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/btn_m_m_garden"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/button_background"
+        android:text="@string/garden"
+        android:textSize="20sp"
+        app:icon="@drawable/baseline_local_florist_24"
+        app:iconSize="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_m_m_basement"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/btn_m_m_basement"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/button_background"
+        android:backgroundTint="#FFFFFF"
+        android:backgroundTintMode="add"
+        android:text="@string/basement"
+        android:textSize="20sp"
+        app:icon="@drawable/light"
+        app:iconSize="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_m_m_garage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:strokeColor="#00FFD8" />
+
+    <Button
+        android:id="@+id/btn_m_m_garage"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="396dp"
+        android:background="@drawable/button_background"
+        android:text="@string/garage"
+        android:textSize="20sp"
+        app:icon="@drawable/garage_icon"
+        app:iconSize="38dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtV_conn_disconn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="516dp"
+        android:text="@string/press_conn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_conn_disconn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/conn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtV_conn_disconn" />
+
+    <ImageView
+        android:id="@+id/imgV_m_m_spsoa_logo"
+        android:layout_width="143dp"
+        android:layout_height="109dp"
+        android:layout_marginTop="12dp"
+        android:importantForAccessibility="no"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_conn_disconn"
+        app:srcCompat="?attr/actionLogo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

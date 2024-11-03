@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HouseMenuFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/houseConstraint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txtV_house_rooms"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:text="@string/house_rooms"
+            android:textSize="34sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.007" />
+
+        <Button
+            android:id="@+id/btn_main_hallway"
+            android:layout_width="200dp"
+            android:layout_height="75dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/button_background"
+            android:text="@string/main_hallway"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/btn_master_bedroom"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            tools:ignore="TextSizeCheck" />
+
+        <Button
+            android:id="@+id/btn_master_bedroom"
+            android:layout_width="200dp"
+            android:layout_height="75dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/master_bedroom"
+            android:textSize="24sp"
+            android:background="@drawable/button_background"
+            app:layout_constraintBottom_toTopOf="@+id/btn_kitchen"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/btn_kitchen"
+            android:layout_width="200dp"
+            android:layout_height="75dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/kitchen"
+            android:textSize="24sp"
+            android:background="@drawable/button_background"
+            app:layout_constraintBottom_toTopOf="@+id/btn_living_r"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/btn_living_r"
+            android:layout_width="200dp"
+            android:layout_height="75dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/living_room"
+            android:textSize="24sp"
+            android:background="@drawable/button_background"
+            app:layout_constraintBottom_toTopOf="@+id/btn_dining_r"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/btn_dining_r"
+            android:layout_width="200dp"
+            android:layout_height="75dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/dining_room"
+            android:textSize="24sp"
+            android:background="@drawable/button_background"
+            app:layout_constraintBottom_toTopOf="@+id/btn_bathroom"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/btn_bathroom"
+            android:layout_width="200dp"
+            android:layout_height="75dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/bathroom"
+            android:textSize="24sp"
+            android:background="@drawable/button_background"
+            app:layout_constraintBottom_toTopOf="@+id/btn_house_add"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/btn_house_add"
+            android:layout_width="200dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="596dp"
+            android:background="@drawable/button_background"
+            android:text="@string/add_room"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btn_house_back"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:text="@string/back"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            tools:ignore="VisualLintButtonSize" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>

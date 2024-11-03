@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainMenuFragment">
+    <fragment
+        android:id="@+id/mainMenuFragment"
+        android:name="com.rusnok4d.mqterminal.MainMenuFragment"
+        android:label="main_menu"
+        tools:layout="@layout/main_menu" >
+        <action
+            android:id="@+id/action_mainMenuFragment_to_houseMenuFragment"
+            app:destination="@id/houseMenuFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_mainMenuFragment_to_basementFragment"
+            app:destination="@id/basementFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_mainMenuFragment_to_gardenFragment"
+            app:destination="@id/gardenFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_mainMenuFragment_to_garageFragment"
+            app:destination="@id/garageFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_mainMenuFragment_to_settingsMenuFragment"
+            app:destination="@id/settingsMenuFragment"
+            app:enterAnim="@anim/slide_in_bottom"
+            app:exitAnim="@anim/slide_out_top"
+            app:popEnterAnim="@anim/slide_in_top"
+            app:popExitAnim="@anim/slide_out_bottom" />
+    </fragment>
+    <fragment
+        android:id="@+id/houseMenuFragment"
+        android:name="com.rusnok4d.mqterminal.HouseMenuFragment"
+        android:label="house_menu"
+        tools:layout="@layout/house_menu" >
+        <action
+            android:id="@+id/action_houseMenuFragment_to_mainHallwayFragment"
+            app:destination="@id/mainHallwayFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_houseMenuFragment_to_masterBedroomFragment"
+            app:destination="@id/masterBedroomFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_houseMenuFragment_to_kitchenFragment"
+            app:destination="@id/kitchenFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_houseMenuFragment_to_livingRoomFragment"
+            app:destination="@id/livingRoomFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_houseMenuFragment_to_diningRoomFragment"
+            app:destination="@id/diningRoomFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_houseMenuFragment_to_bathroomFragment"
+            app:destination="@id/bathroomFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <argument android:name="connection"
+            app:argType="boolean"
+            android:defaultValue="false" />
+        <argument
+            android:name="broker"
+            app:argType="string"
+            android:defaultValue="tcp://192.168.0.180:1883" />
+        <argument
+            android:name="client"
+            app:argType="string"
+            android:defaultValue="Android" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.rusnok4d.mqterminal.AboutFragment"
+        android:label="about"
+        tools:layout="@layout/about" />
+    <fragment
+        android:id="@+id/basementFragment"
+        android:name="com.rusnok4d.mqterminal.BasementFragment"
+        android:label="basement_menu"
+        tools:layout="@layout/basement_menu" >
+        <argument
+            android:name="connection"
+            app:argType="boolean"
+            android:defaultValue="false" />
+        <argument
+            android:name="broker"
+            app:argType="string"
+            android:defaultValue="tcp://192.168.0.180:1883" />
+        <argument
+            android:name="client"
+            app:argType="string"
+            android:defaultValue="Android" />
+    </fragment>
+    <fragment
+        android:id="@+id/gardenFragment"
+        android:name="com.rusnok4d.mqterminal.GardenFragment"
+        android:label="garden_menu"
+        tools:layout="@layout/garden_menu" >
+        <argument
+            android:name="connection"
+            app:argType="boolean"
+            android:defaultValue="false" />
+        <argument
+            android:name="broker"
+            app:argType="string"
+            android:defaultValue="tcp://192.168.0.180:1883" />
+        <argument
+            android:name="client"
+            app:argType="string"
+            android:defaultValue="Android" />
+    </fragment>
+    <fragment
+        android:id="@+id/garageFragment"
+        android:name="com.rusnok4d.mqterminal.GarageFragment"
+        android:label="garage_menu"
+        tools:layout="@layout/garage_menu" >
+        <argument
+            android:name="connection"
+            app:argType="boolean"
+            android:defaultValue="false" />
+        <argument
+            android:name="broker"
+            app:argType="string"
+            android:defaultValue="tcp://192.168.0.180:1883" />
+        <argument
+            android:name="client"
+            app:argType="string"
+            android:defaultValue="Android" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsMenuFragment"
+        android:name="com.rusnok4d.mqterminal.SettingsMenuFragment"
+        android:label="settings_menu"
+        tools:layout="@layout/settings_menu" >
+        <action
+            android:id="@+id/action_settingsMenuFragment_to_aboutFragment"
+            app:destination="@id/aboutFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/bathroomFragment"
+        android:name="com.rusnok4d.mqterminal.BathroomFragment"
+        android:label="BathroomFragment" >
+        <argument
+            android:name="connection"
+            app:argType="boolean"
+            android:defaultValue="false" />
+        <argument
+            android:name="broker"
+            app:argType="string"
+            android:defaultValue="tcp://192.168.0.180:1883" />
+        <argument
+            android:name="client"
+            app:argType="string"
+            android:defaultValue="Android" />
+    </fragment>
+    <fragment
+        android:id="@+id/kitchenFragment"
+        android:name="com.rusnok4d.mqterminal.KitchenFragment"
+        android:label="KitchenFragment" >
+        <argument
+            android:name="connection"
+            app:argType="boolean"
+            android:defaultValue="false" />
+        <argument
+            android:name="broker"
+            app:argType="string"
+            android:defaultValue="tcp://192.168.0.180:1883" />
+        <argument
+            android:name="client"
+            app:argType="string"
+            android:defaultValue="Android" />
+    </fragment>
+    <fragment
+        android:id="@+id/livingRoomFragment"
+        android:name="com.rusnok4d.mqterminal.LivingRoomFragment"
+        android:label="LivingRoomFragment" >
+        <argument
+            android:name="connection"
+            app:argType="boolean"
+            android:defaultValue="false" />
+        <argument
+            android:name="broker"
+            app:argType="string"
+            android:defaultValue="tcp://192.168.0.180:1883" />
+        <argument
+            android:name="client"
+            app:argType="string"
+            android:defaultValue="Android" />
+    </fragment>
+    <fragment
+        android:id="@+id/masterBedroomFragment"
+        android:name="com.rusnok4d.mqterminal.MasterBedroomFragment"
+        android:label="MasterBedroomFragment" >
+        <argument
+            android:name="connection"
+            app:argType="boolean"
+            android:defaultValue="false" />
+        <argument
+            android:name="broker"
+            app:argType="string"
+            android:defaultValue="tcp://192.168.0.180:1883" />
+        <argument
+            android:name="client"
+            app:argType="string"
+            android:defaultValue="Android" />
+    </fragment>
+    <fragment
+        android:id="@+id/diningRoomFragment"
+        android:name="com.rusnok4d.mqterminal.DiningRoomFragment"
+        android:label="dining_room_menu"
+        tools:layout="@layout/dining_room_menu" >
+        <argument
+            android:name="connection"
+            app:argType="boolean"
+            android:defaultValue="false" />
+        <argument
+            android:name="broker"
+            app:argType="string"
+            android:defaultValue="tcp://192.168.0.180:1883" />
+        <argument
+            android:name="client"
+            app:argType="string"
+            android:defaultValue="Android" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainHallwayFragment"
+        android:name="com.rusnok4d.mqterminal.MainHallwayFragment"
+        android:label="MainHallwayFragment" >
+        <argument
+            android:name="connection"
+            app:argType="boolean"
+            android:defaultValue="false" />
+        <argument
+            android:name="broker"
+            app:argType="string"
+            android:defaultValue="tcp://192.168.0.180:1883" />
+        <argument
+            android:name="client"
+            app:argType="string"
+            android:defaultValue="Android" />
+    </fragment>
+</navigation>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".HouseMenuFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/houseConstraint"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txtV_house_rooms"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:text="@string/house_rooms"
+                android:textSize="34sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.008" />
+
+            <Button
+                android:id="@+id/btn_house_add"
+                android:layout_width="184dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="630dp"
+                android:background="@drawable/button_background"
+                android:text="@string/add_room"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btn_house_back"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="#000000"
+                android:text="@string/back"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0"
+                tools:ignore="VisualLintButtonSize" />
+
+            <ImageView
+                android:id="@+id/imgV_main_hallway"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="64dp"
+                android:clickable="true"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/main_hallway_f" />
+
+            <ImageView
+                android:id="@+id/imgV_kitchen"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="252dp"
+                android:clickable="true"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/kitchen_f" />
+
+            <ImageView
+                android:id="@+id/imgV_living_room"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="428dp"
+                android:clickable="true"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/living_room_f" />
+
+            <ImageView
+                android:id="@+id/imgV_bathroom"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="428dp"
+                android:layout_marginEnd="44dp"
+                android:clickable="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/bathroom_f" />
+
+            <ImageView
+                android:id="@+id/imgV_master_bedroom"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="64dp"
+                android:layout_marginEnd="44dp"
+                android:clickable="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/master_bedroom_f" />
+
+            <ImageView
+                android:id="@+id/imgV_dining_room"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="252dp"
+                android:layout_marginEnd="44dp"
+                android:clickable="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/dining_room_f" />
+
+            <TextView
+                android:id="@+id/txtV_bathroom"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="@string/bathroom"
+                android:textAlignment="center"
+                android:textColor="#5ce1e6"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.848"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgV_bathroom" />
+
+            <TextView
+                android:id="@+id/txtV_master_bedroom"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="@string/master_bedroom"
+                android:textAlignment="center"
+                android:textColor="#5ce1e6"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.848"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgV_master_bedroom" />
+
+            <TextView
+                android:id="@+id/txtV_dining_room"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="@string/dining_room"
+                android:textAlignment="center"
+                android:textColor="#5ce1e6"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.848"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgV_dining_room" />
+
+            <TextView
+                android:id="@+id/txtV_main_hallway"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:text="@string/main_hallway"
+                android:textAlignment="center"
+                android:textColor="#5ce1e6"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgV_main_hallway" />
+
+            <TextView
+                android:id="@+id/txtV_kitchen"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:text="@string/kitchen"
+                android:textAlignment="center"
+                android:textColor="#5ce1e6"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgV_kitchen" />
+
+            <TextView
+                android:id="@+id/txtV_living_room"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:text="@string/living_room"
+                android:textAlignment="center"
+                android:textColor="#5ce1e6"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgV_living_room" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
