@@ -36,7 +36,7 @@
     <string name="back"><![CDATA[< Back]]></string>
     <string name="dark_mode">Dark mode</string>
     <string name="current_version_title">Current Version:</string>
-    <string name="app_version" translatable="false">Release 1.0</string>
+    <string name="app_version" translatable="false">Alpha 0.1</string>
     <string name="about">About</string>
     <string name="light_status">Light status:</string>
     <string name="offline_status" translatable="false">Offline</string>
